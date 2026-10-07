@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: playtrought-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: devroot
+      MYSQL_DATABASE: playtrought
+      MYSQL_USER: playtrought_dev
+      MYSQL_PASSWORD: playtrought_dev
+    ports:
+      - "3306:3306"
+    volumes:
+      - playtrought_mysql_data:/var/lib/mysql
+    restart: unless-stopped
+volumes:
+  playtrought_mysql_data:

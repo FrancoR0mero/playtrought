@@ -1,0 +1,44 @@
+# .NET build output
+bin/
+obj/
+out/
+publish/
+
+# Visual Studio / IDE
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.idea/
+*.sln.iml
+.vscode/
+
+# Test results
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Build artifacts / logs
+artifacts/
+*.log
+logs/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Temp / backups
+*.tmp
+*.temp
+*.bak
+
+# NOTE: docker-compose.yml and appsettings*.json are intentionally NOT ignored.
