@@ -1,0 +1,16 @@
+<div class="flex min-h-screen flex-col">
+  <header class="bg-background px-6 py-4 text-accent">
+    <span class="text-lg font-semibold">Playtrought</span>
+  </header>
+
+  <main class="flex-1">
+    <router-outlet />
+  </main>
+
+  <footer class="border-t border-slate-800 px-6 py-4">
+    <span class="mr-2 rounded bg-playing px-2 py-1 text-xs text-background">Playing</span>
+    <span class="mr-2 rounded bg-backlog px-2 py-1 text-xs text-background">Backlog</span>
+    <span class="mr-2 rounded bg-finished px-2 py-1 text-xs text-background">Finished</span>
+    <span class="rounded bg-platinum px-2 py-1 text-xs text-background">Platinum</span>
+  </footer>
+</div>

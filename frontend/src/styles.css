@@ -1,3 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'tailwindcss';
+
+/* Single source of truth for the provisional palette (AS2).
+   Values are placeholders — change a game-state color by editing ONE line here. */
+@theme {
+  --color-background: #0b0f1a; /* dark base   */
+  --color-accent: #6366f1; /* accent      */
+  --color-playing: #22c55e; /* playing     */
+  --color-backlog: #64748b; /* backlog     */
+  --color-finished: #3b82f6; /* finished    */
+  --color-platinum: #eab308; /* platinum    */
+}
+
+body {
+  background-color: var(--color-background);
+  color: #e5e7eb;
+}
